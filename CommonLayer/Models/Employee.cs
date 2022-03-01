@@ -10,6 +10,8 @@ namespace CommonLayer.Models
         public string Name { get; set; }
         public string Age { get; set; }
         public string Salary { get; set; }
+        public string Phone { get; set; }
         public int Department_id { get; set; }
+
     }
 }

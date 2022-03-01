@@ -18,5 +18,24 @@ namespace BusinessLogicLayer
         {
             return dataAccess.GetEmployees();
         }
+
+        public bool InsertEmployee(Employee employee)
+        {
+            return dataAccess.InsertEmployee(employee);
+        }
+        public bool DeleteEmployee(int id)
+        {
+            return dataAccess.DeleteEmployee(id);
+        }
+
+        public bool UpdateEmployee(Employee employee)
+        {
+            return dataAccess.UpdateEmployee(employee);
+        }
+
+        public Employee GetEmployeeById(int id)
+        {
+            return dataAccess.GetEmployeeById(id);
+        }
     }
 }
