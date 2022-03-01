@@ -1,0 +1,25 @@
+﻿@model IEnumerable<CommonLayer.Models.Employee>
+
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <td>Id</td>
+            <td>Name</td>
+            <td>Age</td>
+            <td>Salary</td>
+            <td>Department_id</td>
+        </tr>
+    </thead>
+
+    @foreach(var emp in Model)
+    {
+        <tr>
+            <th>@emp.id</th>
+            <th>@emp.Name</th>
+            <th>@emp.Salary</th>
+            <th>@emp.Age</th>
+            <th>@emp.Department_id</th>
+        </tr>
+    }
+</table>
